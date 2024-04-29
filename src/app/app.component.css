@@ -1,0 +1,477 @@
+/* ================ Todo el proyecto ================ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #081b29;
+    color: #ededed;
+}
+
+/* ================ Cabecera ================ */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 25px;
+    color: #2ECC71;
+    text-decoration: none;
+    font-weight: 600;
+    pointer-events: none;
+    opacity: 0;
+    animation: deslizadoHeader 1s ease forwards;
+}
+
+/* --------  Efecto Menú -------- */
+
+.navbar * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+.navbar a{
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 65;
+    padding: 15px;
+    margin-right: 10px;
+    opacity: 0;
+    animation: deslizadoHeader .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a::before,
+.navbar a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.navbar a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #2ECC71;
+    border-right: 3px solid #2ECC71;
+    transform: translate(-100%, 50%);
+}
+
+.navbar a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #2ECC71;
+    border-left: 3px solid #2ECC71;
+    transform: translate(100%, -50%)
+ }
+  
+.navbar a:hover:before,
+.navbar a:hover:after{
+   transform: translate(0,0);
+   opacity: 1;
+} 
+
+.navbar a:hover,
+.navbar a.active{
+    color: #2ECC71 ; /* color primario */
+}
+
+/* ================ Sección Inicio ================ */
+
+.inicio{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.inicio-content{
+    max-width: 710px;
+}
+
+
+.inicio-content h1{
+    position: relative;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.inicio-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: muestraLogo 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.inicio-content h1 span{
+    padding: 5px;
+    border: 3px solid #145A32;
+    border-radius: 8px;
+    background-color: #229954;
+	animation: gradiente 1.5s infinite alternate;
+}
+
+.inicio-content span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: muestraLogo 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.inicio-content .clic:hover{
+    animation: clic 0.5s 1;
+}
+
+
+/* -------- Efecto Escritura -------- */
+
+.spin:after {
+    content: '';
+    animation: spin 5s linear infinite; /* @keyframe spin */
+  }
+
+/* -------- Fin Efecto Escritura -------- */
+
+.inicio-content h3{
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    color: #2ECC71 ; /* color primario */
+}
+
+.inicio-content h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: muestraLogo 1s ease forwards;
+    animation-delay: .1.3s;
+}
+
+.inicio-content p{
+    position: relative;
+    margin: 20px 0 40px;
+    font-size: 18px;
+    text-align: justify;
+  text-justify: inter-word;
+}
+
+.inicio-content p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: muestraLogo 1s ease forwards;
+    animation-delay: .1.6s;
+}
+
+.inicio-content p b{
+    font-weight: 800;
+}
+
+/* ---------------- Botones Inicio ---------------- */
+
+.inicio-content .btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.inicio-content .btn-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: muestraLogo 1s ease forwards;
+    animation-delay: .1.9s;
+    z-index: 2;
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #2ECC71;
+    border: 2px solid #2ECC71;
+    border-radius: 8px;
+    font-size: 25px;
+    color: #081b29;
+    text-decoration: none;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover{
+    color: #2ECC71;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #2ECC71;
+}
+
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2):before{
+    background: #2ECC71;
+}
+
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+/* ---------------- Fin Botones Inicio ---------------- */
+
+/* ================ Redes Sociales ================ */
+
+.inicio-redes{
+    position: absolute;
+    bottom: 40px;
+    width: 340px; /* 170px, relacionado -> .inicio-redes a */
+    display: flex;
+    justify-content: space-between;
+}
+
+.inicio-redes::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: muestraLogo 1s ease forwards;
+    animation-delay: .2.5s;
+    z-index: 2;
+}
+
+.inicio-redes a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px; /*40 px*/
+    height: 75px; /*40 px*/
+    background: transparent;
+    border: 2px solid #2ECC71;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #2ECC71;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.inicio-redes a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #2ECC71;
+    z-index: -1;
+    transition: .5s;
+}
+
+.inicio-redes a:hover::before{
+    width: 100%;
+}
+
+.inicio-redes a:hover{
+    color: #081b29;
+}
+
+/* Efecto en la Imagen */
+
+.inicio-imagen{ 
+    width: 410px;       /* 410px */
+    height: 410px;      /* 410px */
+    opacity: 0;
+    animation: zoomImg 1s ease forwards, flotanteImg 4s ease-in-out infinite/*, flotanteImg 4s ease-in-out infinite*/;
+    animation-delay: 2.1s, 2.1s;
+}
+
+.inicio-imagen .circulo-imagen{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio-imagen .circulo-imagen::after{
+    content: '';
+    position: absolute;
+    width: 380px;  /* 380px */
+    height: 380px; /* 380px */
+    background: #081b29;
+    border-radius: 50%;
+}
+
+.circulo-imagen span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2ECC71,#145A32 ); /* borde imagen */
+    border-radius: 50%;
+    animation: rotacion360 5s linear infinite;
+}
+
+.circulo-imagen .imagen{
+    position: relative;
+    width: 380px;  /* 380px */
+    height: 380px; /* 380px */
+    border-radius: 50%;
+    background: #081b29;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.imagen img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 500px;
+    object-fit: cover;
+}
+
+/* KEYFRAMES DE LAS ANIMACIONES */
+
+@keyframes muestraLogo{
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes deslizadoHeader {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomImg {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes flotanteImg {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-24px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotacion360 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0%  { 
+        opacity: 0;
+        transform: scale(0);
+        content: "Full - Stack Developer";
+    }
+    100% { 
+        opacity: 1;
+        transform: scale(1);
+        content: "RPA Developer";
+    }
+ 
+  }
+
+  @keyframes gradiente {
+	100% {
+        background-color: #196F3D ;
+    }
+}
+
