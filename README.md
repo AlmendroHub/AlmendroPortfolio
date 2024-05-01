@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://angular.io/" target="_blank">
-      <img src="https://i.ytimg.com/vi/Wjj8fluz6rk/maxresdefault.jpg" width="600" height="300"></a>
+      <img src="https://i.ytimg.com/vi/Wjj8fluz6rk/maxresdefault.jpg" width="600" height="100"></a>
 </p>
    
 <p align="center">
