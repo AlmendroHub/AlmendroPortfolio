@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://angular.io/" target="_blank">
-      <img src="https://i.ytimg.com/vi/Wjj8fluz6rk/maxresdefault.jpg" width="400"></a>
+      <img src="https://d2a5isokysfowx.cloudfront.net/wp-content/uploads/2022/07/que-es-angular-scaled.jpg" width="400"></a>
 </p>
    
 <p align="center">
