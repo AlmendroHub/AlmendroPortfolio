@@ -11,6 +11,6 @@
 ## Personal Portfolio With Angular ♨️
 
 <p align="center">
-    <img src="https://i.imgur.com/kuDrAsf.png" width="1000" height="300" alt="Almendro Portfolio">
+    <img src="https://i.imgur.com/kuDrAsf.png" alt="Almendro Portfolio">
 </p>
 
