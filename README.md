@@ -61,3 +61,12 @@ b) **gh-pages**: is a simplification of the angular files to only display the ma
 ├── styles.css
 ```
 
+## Technologies Used 💻
+
+- HTML5
+- CSS3
+- Javascript
+- Bootstrap
+- PHP (in process)
+- Angular
+- Visual Studio Code
