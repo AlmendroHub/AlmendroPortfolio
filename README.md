@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://angular.io/" target="_blank">
-      <img src="https://victorroblesweb.es/wp-content/uploads/2017/04/angular4.png" width="600"></a>
+      <img src="https://victorroblesweb.es/wp-content/uploads/2017/04/angular4.png" width="500"></a>
 </p>
    
 <p align="center">
