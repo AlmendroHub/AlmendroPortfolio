@@ -26,11 +26,11 @@ The parts will:
 - Projects          ->     Will reflect the most important projects, my acitude in the labor market....
 - Contact           ->     A simple form contact with PHP to contact me.
 
-  ## File Structure ⛓️
+## File Structure ⛓️
 
 The structure of the project is divided in 2 branches:
 
-a) master: contain all the files of the angular project.
+a) **master**: contain all the files of the angular project.
 
 ```
 .
@@ -48,7 +48,7 @@ a) master: contain all the files of the angular project.
 ├── pnpm-lock.yaml
 ```
 
-b) gh-pages: is a simplification of the angular files to only display the main files.
+b) **gh-pages**: is a simplification of the angular files to only display the main files.
 
 ```
 .
