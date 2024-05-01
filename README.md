@@ -17,3 +17,47 @@
     </a>
 </p>
 
+## About The Project 🌟
+
+It's my personal portfolio where I show an overview about me, with my frontend/backend skills 🌠. Still under development, because I want to add a couple of elements and make it full responsive 🚧.
+The parts will:
+
+- Personal Info     ->     I'll show a brief summary about how I got started in the world of IT (hardware, software...)
+- Projects          ->     Will reflect the most important projects, my acitude in the labor market....
+- Contact           ->     A simple form contact with PHP to contact me.
+
+  ## File Structure ⛓️
+
+The structure of the project is divided in 2 branches:
+
+a) master: contain all the files of the angular project.
+
+```
+.
+├── src/
+│   ├── app/
+│   │   ├── app.component.css
+│   │   ├── app.component.html
+│   │   ├── assets/
+│   │   │   ├── cv/
+│   │   │   ├── img/
+│   │   │   ├── js/
+│   │   │   ├── favicon/
+├── angular.json
+├── package.json
+├── pnpm-lock.yaml
+```
+
+b) gh-pages: is a simplification of the angular files to only display the main files.
+
+```
+.
+├── assets/
+│   ├── cv/
+│   ├── img/
+│   ├── js/
+│   ├── favicon/
+├── index.html
+├── styles.css
+```
+
