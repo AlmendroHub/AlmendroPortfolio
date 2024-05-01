@@ -8,4 +8,9 @@
     <img src="https://img.shields.io/badge/STATUS-DEVELOPMENT-yellow">
 </p>
 
+## Personal Portfolio withy Angular 👾
+
+<p align="center">
+    <img src="https://i.imgur.com/kuDrAsf.png" width="500" alt="Almendro Portfolio">
+</p>
 
