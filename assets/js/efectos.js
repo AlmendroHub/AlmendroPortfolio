@@ -18,3 +18,4 @@ window.onload = function(){
     navbar.addEventListener("click", () => {
         navbar.classList.remove("visible")
     })
+}
