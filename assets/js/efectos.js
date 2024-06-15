@@ -9,13 +9,13 @@ window.onload = function(){
 
     abrir.addEventListener("click", () => {
         navbar.classList.add("visible")
-    })
+    });
 
     cerrar.addEventListener("click", () => {
         navbar.classList.remove("visible")
-    })
+    });
 
     navbar.addEventListener("click", () => {
         navbar.classList.remove("visible")
-    })
+    });
 }
