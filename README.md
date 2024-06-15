@@ -39,7 +39,6 @@ a) **master**: contain all the files of the angular project.
 │   │   ├── app.component.css
 │   │   ├── app.component.html
 │   │   ├── assets/
-│   │   │   ├── cv/
 │   │   │   ├── img/
 │   │   │   ├── js/
 │   │   │   ├── favicon/
@@ -57,8 +56,8 @@ b) **gh-pages**: is a simplification of the angular files to only display the ma
 │   ├── img/
 │   ├── js/
 │   ├── favicon/
+│   ├── css/
 ├── index.html
-├── styles.css
 ```
 
 ## Technologies Used 💻
