@@ -23,7 +23,7 @@ It's my personal portfolio where I show an overview about me, with my frontend/b
 The parts will:
 
 - Personal Info     ->     I'll show a brief summary about how I got started in the world of IT (hardware, software...)
-- Projects          ->     Will reflect the most important projects, my acitude in the labor market....
+- Projects          ->     Will reflect the most important projects, my actitude in the labor market....
 - Contact           ->     A simple form contact with PHP to contact me.
 
 ## File Structure ⛓️
