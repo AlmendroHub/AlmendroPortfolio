@@ -13,7 +13,7 @@
 
 <p align="center">
     <a>
-        <img src="https://i.imgur.com/kuDrAsf.png" alt="Almendro Portfolio">
+        <img src="https://imgur.com/gSzHblB" alt="Almendro Portfolio">
     </a>
 </p>
 
